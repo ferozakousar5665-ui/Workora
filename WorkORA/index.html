@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workora – Professional Services Marketplace</title>
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="theme.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-gray shadow-sm">
+    <div class="container">
+
+      <!-- Logo -->
+      <a class="navbar-brand font-weight-bold" href="#">
+        <span class="text-gradient-primary">Work</span><span class="text-warning">ora</span>
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#workoraNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="workoraNav">
+        <ul class="navbar-nav mx-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#services">
+              <i class="bi bi-grid-fill mr-1"></i> Services
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#how">
+              <i class="bi bi-diagram-3-fill mr-1"></i> How It Works
+            </a>
+          </li>
+
+          <!-- NEW: Workers -->
+          <li class="nav-item">
+            <a class="nav-link" href="#workers">
+              <i class="bi bi-people-fill mr-1"></i> Workers
+            </a>
+          </li>
+
+          <!-- NEW: Reviews -->
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">
+              <i class="bi bi-star-fill mr-1 text-warning"></i> Reviews
+            </a>
+          </li>
+        </ul>
+
+        <!-- Auth Buttons -->
+        <a class="btn btn-primary btn-sm" href="login.html"> Login </a> &nbsp;
+        <a class="btn btn-primary btn-sm" href="contactus.html"> Contact Us </a>
+      </div>
+    </div>
+  </nav>
+  <!-- ================= HERO ================= -->
+  <section class="hero-section text-center bg-gradient-hero">
+    <div class="container py-5">
+
+      <h1 class="display-4 font-weight-bold mt-3">
+        Find Trusted <span class="text-gradient-primary">Local Workers</span><br>
+        In Just a Few Clicks
+      </h1>
+
+      <p class="text-muted mt-3 mb-4">
+        Connect with plumbers, electricians, mechanics & more.
+        Book verified professionals instantly.
+      </p>
+
+      <div class="container">
+        <div class="position-relative">
+
+          <div class="input-group input-group-lg mb-4">
+            <input type="text" class="form-control" id="serviceSearch" placeholder="What service do you need?"
+              autocomplete="off">
+            <div class="input-group-append">
+              <button class="btn btn-primary">Search</button>
+            </div>
+          </div>
+
+          <!-- Dropdown -->
+          <div id="serviceList" class="service-dropdown">
+            <div class="service-item">Plumber</div>
+            <div class="service-item">Electrician</div>
+            <div class="service-item">AC Technician</div>
+            <div class="service-item">Cleaner</div>
+            <div class="service-item">Painter</div>
+            <div class="service-item">Car Mechanic</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="font-weight-bold mb-4 text-center text-gradient-primary">Our Services</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card card-gradient-primary text-center p-4">
+            <i class="bi bi-lightning-charge-fill icon-gradient-primary"></i>
+            <h5 class="font-weight-bold mt-2">Electrician</h5>
+            <p class="text-muted-custom">Wiring, repairs & installations</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card card-gradient-primary text-center p-4">
+            <i class="bi bi-tools icon-gradient-accent"></i>
+            <h5 class="font-weight-bold mt-2">Plumber</h5>
+            <p class="text-muted-custom">Leaks, fittings & maintenance</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card card-gradient-primary text-center p-4">
+            <i class="bi bi-snow icon-gradient-primary"></i>
+            <h5 class="font-weight-bold mt-2">AC Technician</h5>
+            <p class="text-muted-custom">Installation & repair services</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card card-gradient-primary text-center p-4">
+            <i class="bi bi-car-front-fill icon-gradient-accent"></i>
+            <h5 class="font-weight-bold mt-2">Car Mechanic</h5>
+            <p class="text-muted-custom">On-demand vehicle repair</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card card-gradient-primary text-center p-4">
+            <i class="bi bi-bucket-fill icon-gradient-primary"></i>
+            <h5 class="font-weight-bold mt-2">Home Cleaning</h5>
+            <p class="text-muted-custom">Deep & regular cleaning</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card card-gradient-primary text-center p-4">
+            <i class="bi bi-brush-fill icon-gradient-accent"></i>
+            <h5 class="font-weight-bold mt-2">Painter</h5>
+            <p class="text-muted-custom">Interior & exterior painting</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HOW IT WORKS ================= -->
+
+  <section id="how" class="py-5">
+    <div class="container">
+      <h2 class="font-weight-bold mb-5 text-center text-gradient-accent">How Workora Works</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="card card-gradient-primary p-4">
+            <i class="bi bi-search icon-gradient-primary mb-3" style="font-size: 50px;"></i>
+            <h5 class="font-weight-bold">1. Choose Service</h5>
+            <p class="text-muted-custom">Select the service you need</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-gradient-primary p-4">
+            <i class="bi bi-calendar-check icon-gradient-accent mb-3" style="font-size: 50px;"></i>
+            <h5 class="font-weight-bold">2. Book Professional</h5>
+            <p class="text-muted-custom">Verified & experienced workers</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-gradient-primary p-4">
+            <i class="bi bi-check-circle icon-gradient-primary mb-3" style="font-size: 50px;"></i>
+            <h5 class="font-weight-bold">3. Get Job Done</h5>
+            <p class="text-muted-custom">Fast, reliable & secure</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED WORKERS ================= -->
+  <section id="workers" class="py-5 bg-light">
+    <div class="container">
+      <!-- Section header -->
+      <div class="text-center mb-5">
+        <h2 class="display-4 font-weight-bold mt-2">
+          Featured <span class="text-gradient-primary">Workers</span>
+        </h2>
+        <p class="text-muted mx-auto" style="max-width:600px;">
+          Meet our highest-rated professionals. Verified, experienced, and ready to help.
+        </p>
+      </div>
+
+      <!-- Workers grid -->
+      <div class="row">
+        <!-- Plumber 1 -->
+        <div class="col-md-6 col-lg-3 mb-4 worker-item" data-category="plumber">
+          <div class="card worker-card shadow-sm">
+            <img src="img.jpg/P 1.jfif">
+            <div class="card-body">
+              <h5>Ahmad Khan</h5>
+              <p class="service">Plumber</p>
+              <div class="rating"><i class="bi bi-star-fill"></i> 4.9</div>
+              <p class="location"><i class="bi bi-geo-alt-fill"></i> Satellite Town</p>
+              <a href="#" class="btn btn-outline-primary btn-block">View Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Electrician 1 -->
+        <div class="col-md-6 col-lg-3 mb-4 worker-item" data-category="electrician">
+          <div class="card worker-card shadow-sm">
+            <img src="img.jpg/E 1.jfif">
+            <div class="card-body">
+              <h5>Usman Ali</h5>
+              <p class="service">Electrician</p>
+              <div class="rating"><i class="bi bi-star-fill"></i> 4.8</div>
+              <p class="location"><i class="bi bi-geo-alt-fill"></i> Model Town</p>
+              <a href="#" class="btn btn-outline-primary btn-block">View Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- AC Technicians 1 -->
+        <div class="col-md-6 col-lg-3 mb-4 worker-item" data-category="ac">
+          <div class="card worker-card shadow-sm">
+            <img src="img.jpg/AC 1.jfif">
+            <div class="card-body">
+              <h5>Hamza</h5>
+              <p class="service">AC Technician</p>
+              <div class="rating"><i class="bi bi-star-fill"></i> 4.8</div>
+              <p class="location"><i class="bi bi-geo-alt-fill"></i> Model Town</p>
+              <a href="#" class="btn btn-outline-primary btn-block">View Profile</a>
+            </div>
+          </div>
+        </div>
+        <!-- Cleaner 1 -->
+        <div class="col-md-6 col-lg-3 mb-4 worker-item" data-category="cleaner">
+          <div class="card worker-card shadow-sm">
+            <img src="img.jpg/Cl 1.jfif">
+            <div class="card-body">
+              <h5>Shbeer</h5>
+              <p class="service">Cleaner</p>
+              <div class="rating"><i class="bi bi-star-fill"></i> 4.9</div>
+              <p class="location"><i class="bi bi-geo-alt-fill"></i> Satellite Town</p>
+              <a href="#" class="btn btn-outline-primary btn-block">View Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- View all button -->
+      <div class="text-center mt-4">
+        <a href="workers.html" class="btn btn-primary btn-lg">
+          View All Workers
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS / REVIEWS ================= -->
+  <section id="reviews" class="py-5 bg-gradient-hero">
+    <div class="container">
+
+      <!-- Section header -->
+      <div class="text-center mb-5">
+
+        <h2 class="display-4 font-weight-bold mt-2">
+          What Our <span class="text-gradient-primary">Customers Say</span>
+        </h2>
+        <p class="text-muted mx-auto" style="max-width: 650px;">
+          Real reviews from real customers who found reliable services through Workora.
+        </p>
+      </div>
+
+      <!-- Reviews grid -->
+      <div class="row">
+
+        <!-- Review 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card card-gradient-primary p-4 h-100 shadow-sm">
+            <i class="bi bi-quote" style="font-size: 40px;"></i>
+
+            <!-- Stars -->
+            <div class="mb-3">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+            </div>
+
+            <p class="text-muted-custom mb-4">
+              “Found an amazing plumber within minutes! He fixed our bathroom leak the same day.
+              The booking process was so easy and the worker was very professional.”
+            </p>
+
+            <!-- User -->
+            <div class="d-flex align-items-center mt-auto">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face"
+                class="rounded-circle mr-3" width="50" height="50" alt="Fatima Zahra">
+              <div>
+                <h6 class="mb-0 font-weight-bold">Fatima Zahra</h6>
+                <small class="text-muted">Homeowner</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card card-gradient-primary p-4 h-100 shadow-sm">
+            <i class="bi bi-quote " style="font-size: 40px;"></i>
+
+            <div class="mb-3">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+            </div>
+
+            <p class="text-muted-custom mb-4">
+              “We use Workora for all our office maintenance needs. The electricians are skilled
+              and always arrive on time. Highly recommended for businesses!”
+            </p>
+
+            <div class="d-flex align-items-center mt-auto">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
+                class="rounded-circle mr-3" width="50" height="50" alt="Hassan Raza">
+              <div>
+                <h6 class="mb-0 font-weight-bold">Hassan Raza</h6>
+                <small class="text-muted">Business Owner</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card card-gradient-primary p-4 h-100 shadow-sm">
+            <i class="bi bi-quote" style="font-size: 40px;"></i>
+
+            <div class="mb-3">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+            </div>
+
+            <p class="text-muted-custom mb-4">
+              “Finally a reliable way to find trustworthy workers! I’ve booked cleaners and AC
+              repair through Workora. The ratings really help in making the right choice.”
+            </p>
+
+            <div class="d-flex align-items-center mt-auto">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face"
+                class="rounded-circle mr-3" width="50" height="50" alt="Ayesha Malik">
+              <div>
+                <h6 class="mb-0 font-weight-bold">Ayesha Malik</h6>
+                <small class="text-muted">Apartment Resident</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ADD REVIEW ================= -->
+  <section class="py-5 bg-light">
+    <div class="container">
+
+      <div class="text-center mb-4">
+        <h3 class="font-weight-bold">
+          Leave a <span class="text-gradient-primary">Review</span>
+        </h3>
+        <p class="text-muted">
+          Share your experience with Workora
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+
+          <div class="card p-4 shadow-sm rounded-lg">
+            <form id="reviewForm">
+
+              <!-- Name -->
+              <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" class="form-control" id="reviewName" required>
+              </div>
+
+              <!-- Role -->
+              <div class="form-group">
+                <label>Your Role</label>
+                <input type="text" class="form-control" placeholder="e.g. Homeowner" id="reviewRole">
+              </div>
+
+              <!-- Rating -->
+              <div class="form-group">
+                <label>Rating</label>
+                <div class="rating-stars">
+                  <i class="bi bi-star-fill" data-value="1"></i>
+                  <i class="bi bi-star-fill" data-value="2"></i>
+                  <i class="bi bi-star-fill" data-value="3"></i>
+                  <i class="bi bi-star-fill" data-value="4"></i>
+                  <i class="bi bi-star-fill" data-value="5"></i>
+                </div>
+              </div>
+
+              <!-- Review -->
+              <div class="form-group">
+                <label>Your Review</label>
+                <textarea class="form-control" rows="4" id="reviewText" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                Submit Review
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= CALL TO ACTION ================= -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+
+        <!-- For Customers -->
+        <div class="col-md-6 mb-4">
+          <div class="card rounded-lg shadow-lg p-4 text-white"
+            style="background: linear-gradient(135deg, #00c1a5 0%, #009b87 100%); position: relative; overflow: hidden;">
+
+            <!-- Decorative circle -->
+            <div
+              style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%; filter: blur(60px);">
+            </div>
+
+            <div class="position-relative" style="z-index: 1;">
+              <div class="d-flex align-items-center justify-content-center mb-3"
+                style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 15px;">
+                <i class="bi bi-people-fill" style="font-size: 24px;"></i>
+              </div>
+              <h3 class="font-weight-bold mb-3">Need a Service?</h3>
+              <p class="mb-4">Find verified local workers for all your home and business needs. Book instantly and pay
+                manually after the job is done.</p>
+              <!-- Find a Worker Button -->
+              <a href="#" class="btn btn-outline-light btn-lg" data-toggle="modal" data-target="#customerModal">
+                Find a Worker <i class="bi bi-arrow-right ml-2"></i>
+              </a>
+
+
+
+            </div>
+          </div>
+        </div>
+
+        <!-- For Workers -->
+        <div class="col-md-6 mb-4">
+          <div class="card rounded-lg shadow-lg p-4 text-white"
+            style="background: linear-gradient(135deg, #ffcd38 0%, #f4a261 100%); position: relative; overflow: hidden;">
+
+            <!-- Decorative circle -->
+            <div
+              style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%; filter: blur(60px);">
+            </div>
+
+            <div class="position-relative" style="z-index: 1;">
+              <div class="d-flex align-items-center justify-content-center mb-3"
+                style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 15px;">
+                <i class="bi bi-briefcase-fill" style="font-size: 24px;"></i>
+              </div>
+              <h3 class="font-weight-bold mb-3">Want More Jobs?</h3>
+              <p class="mb-4">Join thousands of skilled workers earning more. Create your profile, showcase your skills,
+                and get booked by customers nearby.</p>
+              <!-- Join as Worker Button -->
+              <a href="#" class="btn btn-outline-light btn-lg" data-toggle="modal" data-target="#workerModal">
+                Join as Worker <i class="bi bi-arrow-right ml-2"></i>
+              </a>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row mb-4">
+
+        <!-- Brand -->
+        <div class="col-md-3 mb-4">
+          <h3 class="font-weight-bold text-gradient-primary">
+            Work<span class="text-gradient-accent">ora</span>
+          </h3>
+          <p class="text-muted">
+            Connecting skilled workers with customers in Gujranwala. Find trusted services or grow your business with
+            us.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-3 mb-4">
+          <h5 class="font-weight-bold text-gradient-accent">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white-50">Find Workers</a></li>
+            <li><a href="#" class="text-white-50">Browse Services</a></li>
+            <li><a href="#" class="text-white-50">How It Works</a></li>
+            <li><a href="#" class="text-white-50">Pricing</a></li>
+            <li><a href="#" class="text-white-50">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- For Workers -->
+        <div class="col-md-3 mb-4">
+          <h5 class="font-weight-bold text-gradient-accent">For Workers</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white-50">Join as Worker</a></li>
+            <li><a href="#" class="text-white-50">Worker Dashboard</a></li>
+            <li><a href="#" class="text-white-50">Earnings</a></li>
+            <li><a href="#" class="text-white-50">Success Tips</a></li>
+            <li><a href="#" class="text-white-50">Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-md-3 mb-4">
+          <h5 class="font-weight-bold text-gradient-accent">Contact Us</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2 d-flex align-items-start">
+              <i class="bi bi-geo-alt-fill text-gradient-primary mr-2"></i>
+              Qila Didar Singh, Gujranwala, Punjab, Pakistan
+            </li>
+            <li class="mb-2 d-flex align-items-center">
+              <i class="bi bi-telephone-fill text-gradient-primary mr-2"></i>
+              +92 300 1234567
+            </li>
+            <li class="mb-2 d-flex align-items-center">
+              <i class="bi bi-envelope-fill text-gradient-primary mr-2"></i>
+              support@workora.pk
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div
+        class="border-top border-secondary pt-3 d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-2 mb-md-0 text-white-50">&copy; 2026 Workora. All rights reserved.</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-white-50">Privacy Policy</a>
+          <a href="#" class="text-white-50">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Customer Modal -->
+  <div class="modal fade" id="customerModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content workora-modal">
+
+        <div class="modal-header">
+          <h5 class="modal-title">
+            <i class="bi bi-people-fill mr-2"></i> Find a Worker
+          </h5>
+          <button type="button" class="close text-white" data-dismiss="modal">
+            &times;
+          </button>
+        </div>
+
+        <div class="modal-body text-center">
+          <p>
+            You can browse verified workers, compare ratings,
+            and book professionals easily through Workora.
+          </p>
+          <a href="workers.html" class="btn btn-primary btn-block">
+            Browse Workers
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Worker Modal -->
+  <div class="modal fade" id="workerModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content workora-modal">
+
+        <div class="modal-header bg-amber">
+          <h5 class="modal-title">
+            <i class="bi bi-briefcase-fill mr-2"></i> Join as Worker
+          </h5>
+          <button type="button" class="close text-white" data-dismiss="modal">
+            &times;
+          </button>
+        </div>
+
+        <div class="modal-body text-center">
+          <p>
+            Create your profile, showcase your skills,
+            and get hired by nearby customers.
+          </p>
+          <a href="signup.html" class="btn btn-primary btn-block">
+            Create Worker Account
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.addEventListener("scroll", function () {
+      const nav = document.querySelector(".navbar");
+      nav.classList.toggle("scrolled", window.scrollY > 10);
+    });
+  </script>
+  <script>
+    const searchInput = document.getElementById("serviceSearch");
+    const serviceList = document.getElementById("serviceList");
+    const items = document.querySelectorAll(".service-item");
+
+    // show list when input clicked
+    searchInput.addEventListener("click", function () {
+      serviceList.style.display = "block";
+    });
+
+    // fill input on click
+    items.forEach(item => {
+      item.addEventListener("click", function () {
+        searchInput.value = this.innerText;
+        serviceList.style.display = "none";
+      });
+    });
+
+    // hide when clicking outside
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest(".position-relative")) {
+        serviceList.style.display = "none";
+      }
+    });
+  </script>
+
+  <script>
+    let selectedRating = 0;
+
+    const stars = document.querySelectorAll(".rating-stars i");
+
+    stars.forEach(star => {
+      star.addEventListener("click", function () {
+        selectedRating = this.getAttribute("data-value");
+
+        stars.forEach(s => s.classList.remove("active"));
+
+        for (let i = 0; i < selectedRating; i++) {
+          stars[i].classList.add("active");
+        }
+      });
+    });
+
+    document.getElementById("reviewForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      alert("Thank you! Your review has been submitted.");
+
+      this.reset();
+      stars.forEach(s => s.classList.remove("active"));
+      selectedRating = 0;
+    });
+  </script>
+
+
+</body>
+
+</html>

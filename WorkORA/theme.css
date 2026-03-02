@@ -1,0 +1,376 @@
+/* =====================================================
+   Workora Theme CSS
+   Color Combo: Teal + Amber (Attractive & Professional)
+   ===================================================== */
+
+:root {
+  --primary: #0D9488;       /* Teal */
+  --accent: #F59E0B;        /* Amber */
+  --background: #D1F1ED;
+  --section-bg: #F1F5F9;
+  --text-primary: #0F172A;
+  --text-muted: #64748B;
+  --success: #16A34A;
+}
+
+/* ---------- Global ---------- */
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.text-muted,
+.text-muted-custom {
+  color: var(--text-muted) !important;
+}
+
+/* ---------- Sticky Navbar ---------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+}
+
+/* Space fix so content doesn't hide under navbar */
+body {
+  padding-top: 1px;
+}
+
+
+/* ---------- Navbar ---------- */
+
+.navbar {
+  background-color: var(--section-bg);
+  transition: 0.3s ease;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand span:first-child {
+  color: var(--primary);
+}
+
+.navbar-brand span:last-child {
+  color: var(--accent);
+}
+
+.nav-link {
+  color: var(--text-primary) !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--primary) !important;
+}
+
+/* ---------- Buttons ---------- */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/* ---------- Sections ---------- */
+.bg-light {
+  background-color: var(--section-bg) !important;
+}
+
+.hero-section {
+  background-color: var(--background);
+}
+
+/* ---------- Text ---------- */
+.text-gradient-primary {
+  color: var(--primary);
+}
+
+.text-gradient-accent {
+  color: var(--accent);
+}
+
+.text-success {
+  color: var(--success) !important;
+}
+
+/* ---------- Cards ---------- */
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background-color: var(--background);
+}
+
+.card-gradient-primary {
+  background-color: var(--section-bg);
+  transition: 0.3s ease;
+}
+
+.card-gradient-primary:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Icons ---------- */
+.icon-gradient-primary {
+  font-size: 48px;
+  color: var(--primary);
+}
+
+.icon-gradient-accent {
+  font-size: 48px;
+  color: var(--accent);
+}
+
+/* ---------- Badges ---------- */
+.badge-secondary {
+  background-color: var(--section-bg);
+  color: var(--text-primary);
+}
+
+/* ---------- Workers ---------- */
+#workers img {
+  height: 240px;
+  object-fit: cover;
+}
+
+/* ---------- Reviews ---------- */
+#reviews {
+  background-color: var(--background);
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #0F172A;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+/* ---------- Utilities ---------- */
+.rounded-lg {
+  border-radius: 16px;
+}
+
+.shadow-sm {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-lg {
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.15);
+}
+/* ===== WORKORA MODAL STYLING ===== */
+
+.workora-modal {
+  border-radius: 15px;
+  overflow: hidden;
+  border: none;
+}
+
+.workora-modal .modal-header {
+  background: linear-gradient(135deg,  #F59E0B, #D97706);
+  color: #fff;
+  border-bottom: none;
+}
+
+.workora-modal .modal-body {
+  padding: 30px;
+  color: #111827;
+}
+
+.workora-modal p {
+  color: #374151;
+  margin-bottom: 20px;
+}
+
+/* Amber Header */
+.bg-amber {
+  background: linear-gradient(135deg, #F59E0B, #D97706);
+  color: #fff;
+}
+/* =====================================================
+   Workers Page (Matched with Workora Theme)
+   ===================================================== */
+
+/* Workers Page Header */
+.workers-header {
+  padding: 70px 0;
+  background: linear-gradient(
+    135deg,
+    var(--primary) 0%,
+    #0F766E 100%
+  );
+  color: #ffffff;
+}
+
+.workers-header h1 {
+  font-weight: 700;
+}
+
+.workers-header p {
+  color: #E2E8F0;
+}
+
+/* Worker Card */
+.worker-card {
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: var(--background);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.worker-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(13, 148, 136, 0.18);
+}
+
+/* Worker Image */
+.worker-card img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Card Body */
+.worker-card .card-body {
+  padding: 20px;
+}
+
+/* Worker Name */
+.worker-card h5 {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Service Title */
+.worker-card .service {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* Rating */
+.worker-card .rating {
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* Location */
+.worker-card .location {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+/* View Profile Button */
+.worker-card .btn-outline-primary {
+  border-color: var(--primary);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.worker-card .btn-outline-primary:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+/* Filter Buttons (Workers Page) */
+.workers-filter .btn-outline-primary {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.workers-filter .btn-outline-primary:hover,
+.workers-filter .btn-outline-primary.active {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+.workers-filter .btn.active {
+  background-color: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+/* ===== Workers Filter Button (Amber Active State) ===== */
+
+.workers-filter .btn-outline-primary.active,
+.workers-filter .btn-outline-primary:active,
+.workers-filter .btn-outline-primary:focus {
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+}
+
+/* Hover state (optional – soft amber hover) */
+.workers-filter .btn-outline-primary:hover {
+  background-color: rgba(245, 158, 11, 0.1);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+/* ===== Service Search Dropdown ===== */
+
+.service-dropdown {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+  z-index: 999;
+  margin-top: -15px;
+}
+
+.service-item {
+  padding: 12px 18px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.service-item:hover {
+  background-color: #F59E0B; /* Amber */
+  color: #fff;
+}
+/* ===== Review Form ===== */
+
+.rating-stars i {
+  font-size: 26px;
+  color: #e5e7eb;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: 0.2s;
+}
+
+.rating-stars i.active {
+  color: #F59E0B; /* Amber */
+}
+
+.rating-stars i:hover {
+  color: #F59E0B;
+}
